@@ -54,7 +54,7 @@ site-aureci/
 ## ⚙️ Como Configurar
 
 1. **WhatsApp de Atendimento:**
-   * No arquivo `index.html`, procure por `5500000000000` e substitua pelo número real de atendimento com DDD (exemplo: `5511999999999`).
+   * No arquivo `index.html`, procure por `5511979596746` e substitua pelo número real de atendimento com DDD (exemplo: `5511979596746`).
 2. **Fotografia:**
    * Substitua `assets/images/aureci-sena.jpg` pela fotografia oficial da profissional.
 3. **Qualificações e Redes Sociais:**
@@ -65,3 +65,4 @@ site-aureci/
 ## 📄 Licença e Direitos
 
 © 2026 Aureci Sena. Todos os direitos reservados.
+
