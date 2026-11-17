@@ -13,24 +13,36 @@
    -------------------------------------------------------------------------- */
 :root {
   /* Cores Obrigatórias do Projeto */
-  --color-graphite: #171717;          /* Preto grafite - Fundo principal */
-  --color-copper: #98745F;            /* Cobre/marrom nobre - Títulos e detalhes */
-  --color-white: #F5F5F5;             /* Branco refinado - Textos principais */
-  --color-gray: #A0A0A0;              /* Cinza suave - Textos secundários */
+  --color-graphite: #171717;
+  /* Preto grafite - Fundo principal */
+  --color-copper: #98745F;
+  /* Cobre/marrom nobre - Títulos e detalhes */
+  --color-white: #F5F5F5;
+  /* Branco refinado - Textos principais */
+  --color-gray: #A0A0A0;
+  /* Cinza suave - Textos secundários */
 
   /* Camadas e Nuances de Profundidade */
-  --color-bg-darker: #101010;         /* Fundo de contraste escuro */
-  --color-bg-card: #1f1f1f;           /* Fundo de cartões e painéis */
-  --color-bg-card-hover: #262626;     /* Fundo de hover nos cartões */
-  --color-bg-input: #1b1b1b;          /* Fundo de campos de formulário */
-  --color-copper-light: #b58c75;      /* Cobre iluminado (hover / destaques) */
-  --color-copper-dark: #7a5a48;       /* Cobre escurecido para sombras */
+  --color-bg-darker: #101010;
+  /* Fundo de contraste escuro */
+  --color-bg-card: #1f1f1f;
+  /* Fundo de cartões e painéis */
+  --color-bg-card-hover: #262626;
+  /* Fundo de hover nos cartões */
+  --color-bg-input: #1b1b1b;
+  /* Fundo de campos de formulário */
+  --color-copper-light: #b58c75;
+  /* Cobre iluminado (hover / destaques) */
+  --color-copper-dark: #7a5a48;
+  /* Cobre escurecido para sombras */
   --color-copper-glow: rgba(152, 116, 95, 0.28);
   --color-copper-soft: rgba(152, 116, 95, 0.12);
   --color-border: rgba(152, 116, 95, 0.32);
   --color-border-subtle: rgba(255, 255, 255, 0.08);
-  --color-gray-dark: #6b6b6b;         /* Cinza sutil para legendas */
-  --color-whatsapp: #25D366;          /* Cor de apoio do WhatsApp */
+  --color-gray-dark: #6b6b6b;
+  /* Cinza sutil para legendas */
+  --color-whatsapp: #25D366;
+  /* Cor de apoio do WhatsApp */
 
   /* Tipografia Elegante e Humanista */
   --font-serif: 'Playfair Display', 'Cinzel', 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
@@ -81,7 +93,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   position: relative;
-  background-image: 
+  background-image:
     radial-gradient(circle at 15% 20%, rgba(152, 116, 95, 0.05) 0%, transparent 40%),
     radial-gradient(circle at 85% 65%, rgba(152, 116, 95, 0.04) 0%, transparent 45%);
 }
@@ -131,7 +143,12 @@ body {
 }
 
 /* Tipografia Base */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-serif);
   color: var(--color-white);
   font-weight: 600;
@@ -161,7 +178,8 @@ img {
   display: block;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -178,6 +196,7 @@ ul, ol {
 .section {
   padding: var(--section-padding);
   position: relative;
+  scroll-margin-top: 75px;
 }
 
 .section-alt {
@@ -491,6 +510,7 @@ ul, ol {
   padding-bottom: 5rem;
   position: relative;
   overflow: hidden;
+  scroll-margin-top: 75px;
 }
 
 /* Efeito de iluminação suave de fundo */
@@ -999,10 +1019,10 @@ ul, ol {
   left: 60px;
   right: 60px;
   height: 2px;
-  background: linear-gradient(90deg, 
-    var(--color-copper) 0%, 
-    rgba(152, 116, 95, 0.4) 50%, 
-    var(--color-copper) 100%);
+  background: linear-gradient(90deg,
+      var(--color-copper) 0%,
+      rgba(152, 116, 95, 0.4) 50%,
+      var(--color-copper) 100%);
   z-index: 0;
 }
 
@@ -1069,7 +1089,7 @@ ul, ol {
    -------------------------------------------------------------------------- */
 .impact-section {
   padding: clamp(5.5rem, 10vw, 8.5rem) 1.5rem;
-  background: 
+  background:
     linear-gradient(180deg, rgba(23, 23, 23, 0.94) 0%, rgba(23, 23, 23, 0.87) 50%, rgba(23, 23, 23, 0.95) 100%),
     url('../assets/images/imagens-do-site/espaco-terapeutico.jpg') center/cover no-repeat;
   position: relative;
@@ -1537,6 +1557,7 @@ textarea.form-control {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1548,6 +1569,7 @@ textarea.form-control {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1559,10 +1581,12 @@ textarea.form-control {
     transform: scale(1);
     opacity: 0.6;
   }
+
   70% {
     transform: scale(1.4);
     opacity: 0;
   }
+
   100% {
     transform: scale(1.4);
     opacity: 0;
@@ -1592,7 +1616,8 @@ textarea.form-control {
   }
 
   .steps-grid::before {
-    display: none; /* Linha horizontal não se aplica a 2 colunas */
+    display: none;
+    /* Linha horizontal não se aplica a 2 colunas */
   }
 
   .contact-grid {
@@ -1646,10 +1671,12 @@ textarea.form-control {
     padding: 3rem 2rem;
     gap: 1.8rem;
     transform: translateY(-120%);
-    transition: transform var(--transition-normal);
+    transition: transform 0.25s ease;
     border-top: 1px solid var(--color-border);
     overflow-y: auto;
     z-index: 1000;
+    /* Quando fechado, não intercepta cliques da página */
+    pointer-events: none;
   }
 
   .nav-link {
@@ -1665,21 +1692,22 @@ textarea.form-control {
   }
 
   /* Ativação do Menu Mobile quando o Checkbox está MARCADO */
-  .menu-toggle:checked ~ .nav-menu {
+  .menu-toggle:checked~.nav-menu {
     transform: translateY(0);
+    pointer-events: auto;
   }
 
-  .menu-toggle:checked ~ .menu-hamburger span {
+  .menu-toggle:checked~.menu-hamburger span {
     background: transparent;
   }
 
-  .menu-toggle:checked ~ .menu-hamburger span::before {
+  .menu-toggle:checked~.menu-hamburger span::before {
     top: 0;
     transform: rotate(45deg);
     background: var(--color-copper);
   }
 
-  .menu-toggle:checked ~ .menu-hamburger span::after {
+  .menu-toggle:checked~.menu-hamburger span::after {
     bottom: 0;
     transform: rotate(-45deg);
     background: var(--color-copper);
@@ -1756,6 +1784,7 @@ textarea.form-control {
   .whatsapp-number {
     font-size: 0.82rem;
   }
+
   .hero-actions {
     flex-direction: column;
     width: 100%;
@@ -1778,4 +1807,19 @@ textarea.form-control {
     bottom: 15px;
     padding: 0.75rem 1rem;
   }
+}
+
+
+/* --------------------------------------------------------------------------
+   SCROLL-MARGIN-TOP — Compensação do header fixo para âncoras de seção
+   Garante que ao navegar por links de âncora (#inicio, #sobre etc.)
+   o conteúdo não fique escondido atrás do header fixo de 75px
+   -------------------------------------------------------------------------- */
+#inicio,
+#sobre,
+#tratamentos,
+#como-funciona,
+#impacto,
+#contato {
+  scroll-margin-top: 85px;
 }
